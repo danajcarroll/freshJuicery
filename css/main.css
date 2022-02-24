@@ -5,6 +5,29 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --siteMain: #fff;
+    --siteSubLight: #fff;
+    --siteSubDark: #fff;
+
+    --pinkMain: #D9405A;
+    --pinkSubLight: #DE5C72;
+    --pinkSubDark: #C52C45;
+
+    --greenMain: #A4D940;
+    --greenSubLight: #B3DE5C;
+    --greenSubDark: #90C52C;
+
+    --yellowMain: #D9B22B;
+    --yellowSubLight: #DEBB41;
+    --yellowSubDark: #C5A01D;
+}
+
+/* BASIC STYLING */
+
+
+
+
 table.nutritionTable {
     width: 100%;
     text-align: left;
