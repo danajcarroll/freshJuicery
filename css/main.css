@@ -4,3 +4,25 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+table.nutritionTable {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.nutritionTable td, table.nutritionTable th {
+    padding: 3px 2px;
+}
+table.nutritionTable tfoot td {
+    font-size: 14px;
+}
+table.nutritionTable tfoot .links {
+    text-align: right;
+}
+table.nutritionTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
