@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav class="bold">
         <h4>the fresh juicery.</h4>
         <ul>
             <li>STRAWBERRY PASSION</li>
@@ -21,21 +21,25 @@
     </nav>
 
     <main>
-        <section id="mainBanner">
-            <h1>the fresh juicery.</h1>
-            <img src="css/images/triplesmoothie.png" alt="Our three latest juices, Strawberry Passion, Kiwi Lemon, and Cucumber Melon">
-            <p>explore our newest flavours</p>
+        <section id="mainBanner" class="mainBanner">
+            <h1 class="bannerText">the fresh juicery.</h1>
+            <img class="bannerImage" src="css/images/triplesmoothie.png" alt="Our three latest juices, Strawberry Passion, Kiwi Lemon, and Cucumber Melon">
+            <p class="explore bold">explore our newest flavours</p>
         </section>
-        <section id="strawberryPassion">
+
+        <!-- ---------- STRAWBERRY PASSION ---------- -->
+        <section id="strawberryPassion" class="juiceSection">
             <div class="juiceContainer">
                 <img src="css/images/juice-strawberryPassion.png" alt="Our Strawberry Passion juice">
             </div>
             <div class="textContainer">
-                <h3>BERRIES</h3>
-                <h2>Strawberry Passion</h2>
-                <p>Refreshing and bold, perfect for the day to day. Strawberry Passion is full of nutritions to help with those long work days. Start your day with some passion.</p>
+                <h3 class="lightShade med juiceType">BERRIES</h3>
+                <h2 class="darkShade juiceName">Strawberry Passion</h2>
+                <p class="mainShade reg juiceDesc">Refreshing and bold, perfect for the day to day. Strawberry Passion is full of nutritions to help with those long work days. Start your day with some passion.</p>
                 <div class="fruitIcons">
-
+                    <img src="css/images/icon-strawberry.png" alt="Strawberry" class="miniIcon">
+                    <img src="css/images/icon-grapefruit.png" alt="Grapefruit" class="miniIcon">
+                    <img src="css/images/icon-watermelon.png" alt="Watermelon" class="miniIcon">
                 </div>
                 <div class="nutritionFacts">
                     <h5>nutrition facts</h5>
