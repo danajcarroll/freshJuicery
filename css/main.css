@@ -6,25 +6,179 @@
 }
 
 :root {
-    --siteMain: #fff;
+    --mainBG: #FFEBD1;
+    --siteMain: #ffd7a3;
     --siteSubLight: #fff;
     --siteSubDark: #fff;
 
+    --pinkBG: #fccdd5;
     --pinkMain: #D9405A;
     --pinkSubLight: #DE5C72;
-    --pinkSubDark: #C52C45;
+    --pinkSubDark: #ad1e36;
 
+    --greenBG: #fccdd5;
     --greenMain: #A4D940;
     --greenSubLight: #B3DE5C;
     --greenSubDark: #90C52C;
 
+    --yellowBG: #fccdd5;
     --yellowMain: #D9B22B;
     --yellowSubLight: #DEBB41;
     --yellowSubDark: #C5A01D;
 }
 
-/* BASIC STYLING */
+/* ******************** BASIC STYLING ******************** */
+body {
+    border: 2px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainBG);
+}
+main {
+    border: 2px orange solid;
+    /* padding: 0rem 0rem; */
+    width: 80vw;
+}
+section {
+    height: 105vh;
+    border: 2px blue solid;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.mainShade {
+    color: var(--pinkMain);
+}
+.darkShade {
+    color: var(--pinkSubDark);
+}
+.lightShade {
+    color: var(--pinkSubLight);
+}
+.reg {
+    font-weight: 400;
+}
+.med {
+    font-weight: 500;
+}
+.bold {
+    font-weight: 700;
+}
 
+/* ******************** NAV ******************** */
+nav {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    background-color: var(--siteMain);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 3rem;
+}
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav > ul > li {
+    margin-left: 2rem;
+}
+
+/* ******************** MAIN BANNER ******************** */
+.mainBanner {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "text image"
+    "explore explore"
+    ;
+    align-items: center;
+}
+.bannerText {
+    grid-area: text;
+    font-size: 6rem;
+    width: 5ch;
+}
+.bannerImage {
+    grid-area: image;
+    width: 75%;
+}
+.explore {
+    grid-area: explore;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* ******************** STRAWBERRY PAGE ******************** */
+.juiceSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "juiceImage juiceDesc";
+    align-items: center;
+    justify-content: center;
+}
+.juiceContainer {
+    grid-area: juiceImage;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.juiceContainer > img {
+    width: 30%;
+}
+.textContainer {
+    width: 100%;
+    grid-area: juiceDesc;
+}
+.juiceType {
+    font-size: 1rem;
+}
+.juiceName {
+    font-size: 3rem;
+}
+.juiceDesc {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+.fruitIcons {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+.miniIcon {
+    width: 20%;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--pinkSubLight);
+}
+.nutritionFacts {
+    padding: 0.75rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--pinkMain);
+    border-top: solid 1px var(--pinkSubDark);
+    border-bottom: solid 1px var(--pinkSubDark);
+}
+.nutritionFacts h5 {
+    font-size: 1rem;
+}
 
 
 
@@ -32,6 +186,7 @@ table.nutritionTable {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
+    display: none;
 }
 table.nutritionTable td, table.nutritionTable th {
     padding: 3px 2px;
